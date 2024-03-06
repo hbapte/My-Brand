@@ -1,30 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 /* CSS Reset */
-*, *:before, *:after{
+*,
+*:before,
+*:after {
   margin: 0;
-  padding: 0; 
-  
+  padding: 0;
+
   /* font-size: 100%; */
   /* font: inherit; */
   /* vertical-align: baseline; */
   font-family: "Inter", sans-serif;
   /* font-optical-sizing: auto; */
- 
+
   /* font-style: normal; */
-  
+
 
 }
 
 :root {
   --color-accent: #1E293B;
-  --color-primary:#4ECB71;
+  --color-primary: #4ECB71;
   --color-black: #090909;
   --color-white: #ffffff;
   --footerbg: #ECE8E8;
   --footer-text-color: #3B3A3A;
-  --text-color:var(--color-black);
-  --placeholder-color:#A0AEC0;
+  --text-color: var(--color-black);
+  --placeholder-color: #A0AEC0;
 
   --section-header-fontsize: 40rem;
 
@@ -32,26 +34,27 @@
 
 
 
-body{
+body {
   background-color: var(--color-white);
-  
+
   scroll-behavior: smooth;
 
 }
 
-main{
+main {
   padding: 0 3rem;
 }
+
 .section-title {
   text-align: center;
   text-decoration: underline;
 }
 
-::selection{
-  background-color:var(--color-primary);
+::selection {
+  background-color: var(--color-primary);
 }
 
-a{
+a {
   text-decoration: none;
 }
 
@@ -64,12 +67,12 @@ svg {
 
 /* === Nav === */
 
-header{
+header {
   padding: 1rem 2rem;
   line-height: 1.5;
 }
 
-nav{
+nav {
   display: flex;
   justify-content: space-between;
 }
@@ -87,19 +90,19 @@ nav ul {
   display: flex;
 }
 
-.cv{
+.cv {
   padding: 4px;
 }
 
-.menu svg{
+.menu svg {
   fill: currentColor;
 }
 
 
 /* ===== HOME SECTION ==== */
 
-#home  {
-    padding: 0;
+#home {
+  padding: 0;
 }
 
 .home-container {
@@ -111,14 +114,14 @@ nav ul {
   padding: 0;
 }
 
-.hero-headings{
+.hero-headings {
   margin: 2rem 0;
 }
 
 
 /* ==== ABOUT ME ==== */
 #about-me {
-  font:normal;
+  font: normal;
 }
 
 .about-me-description {
@@ -146,8 +149,8 @@ nav ul {
 .address-titles {
   text-transform: uppercase;
   font-size: 1rem;
-  text-align: center; 
-  margin-bottom: 1rem;  
+  text-align: center;
+  margin-bottom: 1rem;
 
 }
 
@@ -157,12 +160,24 @@ nav ul {
   margin-bottom: 1rem;
 }
 
-
-.contacts-form {
-  padding: 0 2rem 0 9rem ;
+.social-media-icon {
+  display: flex;
+ 
+  justify-content: center;
+  margin-top: 1.5rem;
 }
 
-.inputs{
+.social-media-icon svg {
+  width:2.5rem;
+}
+
+
+/* == Contact Form === */
+.contacts-form {
+  padding: 0 2rem 0 9rem;
+}
+
+.inputs {
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
@@ -177,7 +192,7 @@ legend {
   text-align: center;
   font-size: .9rem;
   text-transform: uppercase;
-  font-weight:700;
+  font-weight: 700;
   margin-bottom: 1rem;
 }
 
@@ -185,12 +200,12 @@ label {
   display: none;
 }
 
-input{
+input {
   background: transparent;
   border: 1px solid var(--color-accent);
   border-radius: 4px;
   padding: .7rem;
-  
+
 }
 
 textarea {
@@ -200,11 +215,11 @@ textarea {
   padding: .7rem;
   resize: none;
   color: var(--color-accent);
-  height:8rem;
+  height: 8rem;
 }
 
-.submit-btn{
-  padding: 8px ;
+.submit-btn {
+  padding: 8px;
   color: var(--color-white);
   background-color: var(--color-primary);
   border: 0px solid var(--color-accent);
