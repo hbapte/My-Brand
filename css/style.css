@@ -12,6 +12,7 @@
   /* font-optical-sizing: auto; */
  
   /* font-style: normal; */
+  
 
 }
 
@@ -33,14 +34,21 @@
 
 body{
   background-color: var(--color-white);
-  padding: 0 2rem;
+  
   scroll-behavior: smooth;
 
 }
 
+main{
+  padding: 0 3rem;
+}
 .section-title {
   text-align: center;
   text-decoration: underline;
+}
+
+::selection{
+  background-color:var(--color-primary);
 }
 
 a{
@@ -136,8 +144,34 @@ nav ul {
 
 .address-titles {
   text-transform: uppercase;
-  font-size: 1rem;  
+  font-size: 1rem;
+  text-align: center; 
+  margin-bottom: 1rem;  
+
+}
+
+.adress-p {
+  font-size: 1rem;
+  padding: 0 4rem 0 0;
+  margin-bottom: 1rem;
 }
 
 
 
+fieldset {
+  border: none;
+}
+
+
+
+footer {
+  background-color: var(--footerbg);
+  color: var(--footer-text-color);
+  text-align: center;
+  margin-top: 4rem;
+  padding: .5rem;
+}
+
+.footer-p {
+  font-size: small;
+}
