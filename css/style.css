@@ -121,11 +121,27 @@ nav ul {
 
 /* ==== ABOUT ME ==== */
 #about-me {
-  font: normal;
+  padding: 5rem 0;
+}
+
+#about-me .section-title {
+  margin-bottom: 1.4rem;
 }
 
 .about-me-description {
   padding: 1rem 0;
+}
+
+.skills{
+  margin: 2rem 0;
+}
+
+.skills-list{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: .6rem;
+  margin:  1.6rem 2rem 6rem;
+  
 }
 
 
