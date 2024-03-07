@@ -68,7 +68,7 @@ svg {
 /* === Nav === */
 
 header {
-  padding: 1rem 2rem;
+  padding: 1.5rem 2rem;
   line-height: 1.5;
 }
 
@@ -88,7 +88,10 @@ nav ul {
 
 .menu {
   display: flex;
+  gap: .5rem ;
 }
+
+
 
 .cv {
   padding: 4px;
@@ -103,11 +106,14 @@ nav ul {
 
 #home {
   padding: 0;
+  margin: 5rem 0;
 }
 
 .home-container {
   display: flex;
   align-items: center;
+  gap: 7rem;
+
 }
 
 .hero-text {
@@ -116,6 +122,11 @@ nav ul {
 
 .hero-headings {
   margin: 2rem 0;
+}
+
+
+.profile-pic{
+  width: 430px;
 }
 
 
