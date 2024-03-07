@@ -79,6 +79,22 @@ nav {
 
 nav ul {
   list-style: none;
+  font-weight: bold;
+}
+
+.nav-link li {
+  padding: 4px 8px;
+}
+
+
+
+.nav-link li:hover {
+  color: var(--color-white);
+  cursor: pointer;
+  border-radius: 4px;
+  background-color: var(--color-primary);
+  
+
 }
 
 .nav-link {
@@ -94,7 +110,15 @@ nav ul {
 
 
 .cv {
-  padding: 4px;
+  padding: 4px 6px;
+  font-weight: bold;
+  border-radius: 4px;
+  background-color: var(--color-white);
+}
+
+.cv a{
+  text-decoration: none;
+  color: var(--color-black);
 }
 
 .menu svg {
