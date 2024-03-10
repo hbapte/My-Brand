@@ -165,7 +165,7 @@ nav ul {
 
 #home {
   padding: 0;
-  margin: 7rem 0 7rem 0;
+  margin: 8rem 0 8rem 0;
 }
 
 .home-container {
@@ -523,7 +523,7 @@ nav ul {
 
 #home {
   padding: 0;
-  margin: 0rem 0 2rem 0;
+  margin: 1rem 0 4rem 0;
   
 }
 
@@ -644,7 +644,7 @@ nav ul {
   /* === ABOUT ME === */
 
   #about-me {
-    padding: 3rem 0;
+    padding: 1rem 0;
   }
   
   
@@ -772,7 +772,7 @@ nav ul {
   }
 
   .section-title{
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     margin-bottom: .5rem;
   }
 
@@ -835,37 +835,38 @@ nav ul {
 
 .cv {
   padding: 2px 4px; 
-  font-weight: bold;
+  border: #1E293B 2px solid;
+  font-weight: 700;
   border-radius: 4px;
   background-color: var(--color-white);
 }
 
 .cv a{
+  font-size: .8rem;
   text-decoration: none;
   color: var(--color-black);
 }
 
 .menu svg {
   fill: currentColor;
-  border: 1px solid var(--color-accent);
+  border: 2px solid var(--color-accent);
   
-  padding: 4px;
+  padding: 1px;
   border-radius: 4px;
 }
-
 
 
 /* ===== HOME SECTION ==== */
 
 #home {
   padding: 0;
-  margin: 0rem 0 2rem 0;
+  margin: 4rem 0 4rem 0;
 }
 
 .home-container {
 
   flex-direction: column-reverse;
-  gap: 2rem;
+  gap: 4rem;
 
 }
 
@@ -885,7 +886,7 @@ nav ul {
 .my-name{
   font-weight: bold;
   text-decoration: underline;
-  font-weight: 1rem;
+  
 }
 
 .my-name-dot{
@@ -916,6 +917,7 @@ nav ul {
   align-items: center;
  
   margin-top: 0rem;
+  margin-bottom: .5rem;
 }
 
 .hire-btn, .cv-btn {
@@ -951,7 +953,7 @@ nav ul {
 
 
 .profile-pic{
-  width: 10rem; 
+  width: 15rem; 
 }
 
 
@@ -962,7 +964,7 @@ nav ul {
   
 
   .hire-btn, .cv-btn {
-    padding: 8px 20px;
+    padding: 8px 14px;
     font-size: .9rem;
   }
 
@@ -978,31 +980,31 @@ nav ul {
 
   /* === ABOUT ME === */
 
+
+
   #about-me {
-    padding: 2rem 0;
+    padding: 1rem 0 1rem 0;
   }
   
   
   
   .about-me-description {
-    padding: .5rem 0;
-    font-size: small;
+    padding: .65rem .4rem;
+    font-size: 0.86rem;
   }
   
   .skills{
     margin: 1rem 0;
-    font-size: small;
+    font-size: .86rem;
   }
 
-  .mobile-hidden
-  
   
   .skills-list{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 0rem;
-    margin:  .6rem 1rem;
-    font-size: small;
+    gap: .2rem;
+    margin:  1rem 1rem;
+    font-size: .86rem;
     
   }
   
@@ -1146,12 +1148,12 @@ nav ul {
 }
 
 .logo-text {
-  font-size: 1rem;
+  font-size: .9rem;
   font-weight: 800;
   color: var(--color-white);
   background-color: var(--placeholder-color);
-  border-radius: 40px 40px ;
-  padding: .2rem .4rem;
+  border-radius: 50% ;
+  padding: .4rem;
   
 }
 
@@ -1164,6 +1166,7 @@ nav ul {
 .nav-link li:hover {
   color: var(--color-white);
   cursor: pointer;
+ 
   border-radius: 4px;
   background-color: var(--color-primary);
   
@@ -1184,21 +1187,23 @@ nav ul {
 
 .cv {
   padding: 2px 4px; 
-  font-weight: bold;
+  border: #1E293B 2px solid;
+  font-weight: 700;
   border-radius: 4px;
   background-color: var(--color-white);
 }
 
 .cv a{
+  font-size: .7rem;
   text-decoration: none;
   color: var(--color-black);
 }
 
 .menu svg {
   fill: currentColor;
-  border: 1px solid var(--color-accent);
+  border: 2px solid var(--color-accent);
   
-  padding: 4px;
+  padding: 1px;
   border-radius: 4px;
 }
 
@@ -1208,13 +1213,15 @@ nav ul {
 
 #home {
   padding: 0;
-  margin: 0rem 0 2rem 0;
+  margin: 0rem 0 0rem 0;
+  
 }
 
 .home-container {
 
   flex-direction: column-reverse;
   gap: 2rem;
+  margin-top: 1rem;
 
 }
 
@@ -1227,14 +1234,14 @@ nav ul {
 }
 
 .greetings {
-  font-size: .9rem;
+  font-size: .7rem;
   margin-bottom: .3rem ;
 }
 
 .my-name{
   font-weight: bold;
   text-decoration: underline;
-  font-weight: 1rem;
+  font-size: .8rem;
 }
 
 .my-name-dot{
@@ -1242,18 +1249,18 @@ nav ul {
 }
 
 .hero-title {
-  font-size: 1rem;
+  font-size: .9rem;
   margin: .5rem 0;
   font-weight: bold;
 }
 
 .bio {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .bio-p {
   line-height: 1.4; 
-  font-size: small;
+  font-size: 0.7rem;
 }
 
 
@@ -1263,8 +1270,9 @@ nav ul {
   flex-direction: row;
   gap: 0rem;
   align-items: center;
- 
+  justify-items: center;
   margin-top: 0rem;
+  padding: 0;
 }
 
 .hire-btn, .cv-btn {
@@ -1276,16 +1284,7 @@ nav ul {
 
 }
 
-.hire-btn {
-  background-color: var(--color-black);
-  margin-right: 1rem;
-}
 
-.hire-btn a{
-   text-decoration: none;
-   color: var(--color-white);
-   font-size: small;
-}
 
 .cv-btn{
   background-color: var(--color-white);
@@ -1295,7 +1294,7 @@ nav ul {
 .cv-btn a {
   text-decoration: none;
   color: var(--color-black);
-  font-size: small ;
+  font-size: .65rem ;
 }
 
 
@@ -1308,18 +1307,27 @@ nav ul {
     padding: 0;
   }
 
+  .hire-btn {
+    background-color: var(--color-black);
+    margin-right: .4rem;
+  }
+  
+  .hire-btn a{
+     text-decoration: none;
+     color: var(--color-white);
+     font-size: .65rem;
+  }
   
 
   .hire-btn, .cv-btn {
-    padding: 8px 20px;
-    font-size: .9rem;
+    padding: 6px 8px;
+
+    
   }
 
   .hire-btn {
     margin-bottom: 0rem;
   }
-
-  
 
 
 
@@ -1328,19 +1336,19 @@ nav ul {
   /* === ABOUT ME === */
 
   #about-me {
-    padding: 1rem 0;
+    padding: 0 ;
   }
   
   
   
   .about-me-description {
-    padding: .4rem 0;
-    font-size: .7rem;
+    padding: .3rem 0;
+    font-size: .68rem;
   }
   
   .skills{
-    margin: 1rem 0;
-    font-size: .7rem;
+    margin: .7rem 0;
+    font-size: .68rem;
   }
 
   .mobile-hidden
@@ -1350,8 +1358,8 @@ nav ul {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0rem;
-    margin:  .6rem 1rem;
-    font-size: .7rem;
+    margin:  .3rem 1rem;
+    font-size: .68rem;
     
   }
   
@@ -1454,7 +1462,7 @@ nav ul {
   
 
   .footer-p {
-    font-size: small;
+    font-size: .6rem;
   }
 
 
