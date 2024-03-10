@@ -119,7 +119,7 @@ nav ul {
   color: var(--color-black);
 }
 
-.nav-link a:hover, .nav-link .active {
+.nav-link a:hover, .nav-link .active , .active-link{
   color: var(--color-white);
   cursor: pointer;
   border-radius: 4px;
@@ -173,8 +173,12 @@ nav ul {
 /* ===== HOME SECTION ==== */
 
 #home {
-  padding: 0;
-  margin: 11rem 0 10rem 0;
+    padding: 0rem 0;
+    margin: 0rem 0 0rem 0;
+    height: 98vh;
+  
+    display: flex;
+    align-items: center;
 }
 
 .home-container {
@@ -268,7 +272,7 @@ nav ul {
 
 /* ==== ABOUT ME ==== */
 #about-me {
-  padding: 5rem 0 1rem 0;
+  padding: 1rem 0;
 }
 
 
@@ -531,9 +535,12 @@ nav ul {
 /* ===== HOME SECTION ==== */
 
 #home {
-  padding: 0;
-  margin: 1rem 0 4rem 0;
+    padding: 0rem 0;
+    margin: 0rem 0 0rem 0;
+    height: 98vh;
   
+    display: flex;
+    align-items: center;
 }
 
 .home-container {
@@ -868,8 +875,12 @@ nav ul {
 /* ===== HOME SECTION ==== */
 
 #home {
-  padding: 0;
-  margin: 6rem 0 5.3rem 0;
+    padding: 0rem 0;
+    margin: 0rem 0 0rem 0;
+    height: 98vh;
+  
+    display: flex;
+    align-items: center;
 }
 
 .home-container {
@@ -992,7 +1003,7 @@ nav ul {
 
 
   #about-me {
-    padding: 4rem 0 0 0;
+    padding: 1rem 0 1rem 0;
   }
   
   
@@ -1071,7 +1082,7 @@ nav ul {
     grid-template-columns: 1fr ;
     gap: 1.2rem;
     margin-top: 1.4rem;
-    margin-bottom: 2rem;
+    margin-bottom: 0rem;
   
   }
 
@@ -1221,8 +1232,12 @@ nav ul {
 /* ===== HOME SECTION ==== */
 
 #home {
-  padding: 2rem 0;
+  padding: 0rem 0;
   margin: 0rem 0 0rem 0;
+  height: 98vh;
+
+  display: flex;
+  align-items: center;
   
 }
 
@@ -1231,6 +1246,7 @@ nav ul {
   flex-direction: column-reverse;
   gap: 2rem;
   margin-top: 1rem;
+
 
 }
 
@@ -1345,20 +1361,20 @@ nav ul {
   /* === ABOUT ME === */
 
   #about-me {
-    padding: 4rem 0 0rem 0 ; 
+    padding: 1rem 0 1rem 0 ;
     margin-bottom: -1.6rem;
   }
   
   
   
   .about-me-description {
-    padding: .4rem 0;
-    font-size: .75rem;
+    padding: .3rem 0;
+    font-size: .68rem;
   }
   
   .skills{
     margin: .7rem 0;
-    font-size: .75rem;
+    font-size: .68rem;
   }
 
   .mobile-hidden
@@ -1369,10 +1385,11 @@ nav ul {
     grid-template-columns: 1fr 1fr;
     gap: 0rem;
     margin:  .3rem 1rem;
-    font-size: .75rem;
+    font-size: .68rem;
     
   }
   
+
   
 
   /*===Contact Section=== */
