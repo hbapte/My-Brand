@@ -34,13 +34,27 @@
 
 }
 
+.light-theme {
+  --bg-color: var(--color-white);
+  --text-color: var(--color-accent);
+ 
+}
+
+.dark-theme {
+  --bg-color: var(--color-accent);
+  --text-color: var(--color-white);
+  --footerbg: #4E525E;
+  --footer-text-color: #FDFDFD;
+}
+
 
 
 body {
-  background-color: var(--color-white);
- 
+  background-color: var(--bg-color);
+  color: var(--text-color);
 
 }
+
 
 main {
   padding: 0 3rem;
@@ -77,13 +91,13 @@ svg:hover {
 /* === Nav === */
 
 header {
-  padding: 1rem 1rem;
+  padding: 0rem 1rem;
   line-height: 1.5;
   position: fixed;
   z-index: 100;
   top: 0;
   left: 0;
-  background-color: var(--color-white);
+  background-color: var(--bg-color);
   backdrop-filter: blur(24px);
   width: 100%;
 }
@@ -102,6 +116,7 @@ nav ul {
 }
 
 .logo-text {
+
   font-size: 1.4rem;
   font-weight: 800;
   color: var(--color-white);
@@ -116,7 +131,7 @@ nav ul {
 }
 
 .nav-link a{
-  color: var(--color-black);
+  color: var(--text-color);
 }
 
 .nav-link a:hover, .nav-link .active , .active-link{

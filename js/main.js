@@ -29,6 +29,17 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
 
 
 
+// Theme
+document.addEventListener("DOMContentLoaded", function() {
+    const themeToggle = document.getElementById("theme-toggle");
+    const body = document.body;
+
+    themeToggle.addEventListener("click", function() {
+        body.classList.toggle("dark-theme");
+    });
+});
+
+
 // Section active link 
 const sections = document.querySelectorAll('section[id]')
     

@@ -42,6 +42,22 @@ body {
 
 }
 
+.light-theme {
+  --bg-color: #ffffff;
+  --text-color: #090909;
+}
+
+.dark-theme {
+  --bg-color: #090909;
+  --text-color: #ffffff;
+}
+
+header {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  padding: 20px 0;
+}
+
 main {
   padding: 0 3rem;
 }
@@ -83,7 +99,7 @@ header {
   z-index: 100;
   top: 0;
   left: 0;
-  background-color: var(--color-white);
+  /* background-color: var(--color-white); */
   backdrop-filter: blur(24px);
   width: 100%;
 }
