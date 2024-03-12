@@ -29,6 +29,7 @@
   --placeholder-color: #A0AEC0;
   --color-primary-hover: #20ec5a;
   --section-header-fontsize: 4rem;
+  --input-color: #1E293B;
   scroll-behavior: smooth; 
 
 }
@@ -36,6 +37,7 @@
 .light-theme {
   --bg-color: var(--color-white);
   --text-color: var(--color-accent);
+  
  
 }
 
@@ -44,6 +46,7 @@
   --text-color: var(--color-white);
   --footerbg: #4E525E;
   --footer-text-color: #FDFDFD;
+  --input-color: #cfcccc;
 }
 
 
@@ -426,6 +429,7 @@ input {
   border: 1px solid var(--placeholder-color);
   border-radius: 4px;
   padding: .7rem;
+  color: var(--input-color);
 
 }
 
@@ -437,7 +441,7 @@ textarea {
   border-radius: 4px;
   padding: .7rem;
   resize: none;
-  color: var(--color-accent);
+  color: var(--input-color);
   height: 8rem;
 }
 
@@ -803,7 +807,8 @@ nav ul {
 
   .inputs input, .inputs textarea {
     padding: .8rem;
-    color: currentColor;
+    color: var(--input-color);
+
   }
 
   textarea {
