@@ -28,8 +28,7 @@
   --text-color: var(--color-black);
   --placeholder-color: #A0AEC0;
   --color-primary-hover: #20ec5a;
-
-  --section-header-fontsize: 40rem;
+  --section-header-fontsize: 4rem;
   scroll-behavior: smooth; 
 
 }
@@ -67,6 +66,7 @@ main {
 
 ::selection {
   background-color: var(--color-primary);
+
 }
 
 a {
@@ -803,6 +803,7 @@ nav ul {
 
   .inputs input, .inputs textarea {
     padding: .8rem;
+    color: currentColor;
   }
 
   textarea {
