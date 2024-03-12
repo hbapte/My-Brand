@@ -186,6 +186,29 @@ nav ul {
 }
 
 
+.error-message {
+  color: #ff7b7b;
+  font-size: .7rem;
+  display: none;
+  margin-top: -.5rem;
+}
+
+.invalid-input {
+  border: 1px solid #ba845adb;
+  
+} 
+
+
+
+
+#messageSent {
+  color: var(--color-primary);
+  font-size: small;
+  text-align: center;
+
+}
+
+
 /* ===== HOME SECTION ==== */
 
 #home {
@@ -546,8 +569,6 @@ nav ul {
 .hamburger{
   display: inline;
 }
-
-
 
 
 

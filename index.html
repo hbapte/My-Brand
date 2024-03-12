@@ -230,12 +230,15 @@
               <div class="inputs">
                 <label for="names">Your Names</label>
                 <input type="text" name="names" id="names" placeholder="Names" />
+                <div id="namesError" class="error-message"></div>
 
                 <label for="email">Email</label>
                 <input type="email" name="email" id="email" placeholder="Email" />
+                <div id="emailError" class="error-message"></div>
 
                 <label for="message">Message/Comment</label>
                 <textarea name="message" id="message" placeholder="Message"></textarea>
+                <div id="messageError" class="error-message"></div>
 
                 <button type="submit" class="submit-btn">Send</button>
                 <div id="messageSent"></div>
