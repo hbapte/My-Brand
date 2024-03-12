@@ -6,6 +6,7 @@
 *:after {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 
   /* font-size: 100%; */
   /* font: inherit; */
@@ -34,22 +35,25 @@
 
 }
 
-
-
-body {
-  background-color: var(--color-white);
- 
-
-}
-
 .light-theme {
-  --bg-color: #ffffff;
-  --text-color: #090909;
+  --bg-color: var(--color-white);
+  --text-color: var(--color-accent);
+ 
 }
 
 .dark-theme {
-  --bg-color: #090909;
-  --text-color: #ffffff;
+  --bg-color: var(--color-accent);
+  --text-color: var(--color-white);
+  --footerbg: #4E525E;
+  --footer-text-color: #FDFDFD;
+}
+
+
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+
 }
 
 header {
@@ -99,7 +103,7 @@ header {
   z-index: 100;
   top: 0;
   left: 0;
-  /* background-color: var(--color-white); */
+  background-color: var(--bg-color); 
   backdrop-filter: blur(24px);
   width: 100%;
 }
@@ -132,7 +136,7 @@ nav ul {
 }
 
 .nav-link a{
-  color: var(--color-black);
+  color: currentColor;
 }
 
 .nav-link a:hover, .nav-link .active {
@@ -175,7 +179,7 @@ nav ul {
 
 .menu svg {
   fill: currentColor;
-  border: 2px solid var(--color-accent);
+  border: 2px solid currentColor;
   padding: 2px;
   border-radius: 4px;
 }
@@ -185,6 +189,30 @@ nav ul {
   display: none;
 }
 
+
+
+
+
+.error-message {
+  color: #ff7b7b;
+  font-size: .7rem;
+  display: none;
+  margin-top: -.5rem;
+}
+
+.invalid-input {
+  border: 1px solid #ba845adb;
+  
+}
+
+
+
+#messageSent {
+  color: var(--color-primary);
+  font-size: small;
+  text-align: center;
+
+}
 
 /* ===== HOME SECTION ==== */
 
@@ -375,6 +403,7 @@ nav ul {
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
+  
 }
 
 
@@ -396,7 +425,7 @@ label {
 
 input {
   background: transparent;
-  border: 1px solid var(--color-accent);
+  border: 1px solid var(--placeholder-color);
   border-radius: 4px;
   padding: .7rem;
 
@@ -406,7 +435,7 @@ input {
 
 textarea {
   background: transparent;
-  border: 1px solid var(--color-accent);
+  border: 1px solid var(--placeholder-color);
   border-radius: 4px;
   padding: .7rem;
   resize: none;
@@ -532,7 +561,7 @@ nav ul {
 
 .menu svg {
   fill: currentColor;
-  border: 1px solid var(--color-accent);
+  border: 1px solid currentColor;
  
   padding: 4px;
   border-radius: 4px;
@@ -874,7 +903,7 @@ nav ul {
 
 .menu svg {
   fill: currentColor;
-  border: 2px solid var(--color-accent);
+  border: 2px solid currentColor;
   
   padding: 1px;
   border-radius: 4px;
@@ -1226,7 +1255,7 @@ nav ul {
 
 .menu svg {
   fill: currentColor;
-  border: 2px solid var(--color-accent);
+  border: 2px solid currentColor;
   
   padding: 1px;
   border-radius: 4px;
