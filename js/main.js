@@ -47,7 +47,7 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
 // Form Validation
 
 function validateEmail(email) {
-    var emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    var emailPattern = /^[a-zA-Z0-9._]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     return emailPattern.test(email);
 }
 
@@ -71,7 +71,7 @@ function validateForm(event) {
 
     // Validating names
     if (names === "") {
-        document.getElementById("namesError").textContent = "Name(s) is required.";
+        document.getElementById("namesError").textContent = "Name(s) is required";
         document.getElementById("namesError").style.display = "block";  
         document.getElementById("names").classList.add("invalid-input");
         isValid = false;
@@ -89,7 +89,7 @@ function validateForm(event) {
 
     // Validating email
     if (email === "") {
-        document.getElementById("emailError").textContent = "Please enter your email.";
+        document.getElementById("emailError").textContent = "Email is required";
         document.getElementById("emailError").style.display = "block";  
         document.getElementById("email").classList.add("invalid-input");
         isValid = false;
@@ -106,12 +106,12 @@ function validateForm(event) {
     }
     // Validating Message
     if (message === "") {
-        document.getElementById("messageError").textContent = "Message can be empty.";
+        document.getElementById("messageError").textContent = "Message is required";
         document.getElementById("messageError").style.display = "block";
         document.getElementById("message").classList.add("invalid-input");
         isValid = false;   
-    } else if (message.length < 20) {
-        document.getElementById("messageError").textContent = "Message is too short. Please enter at least 20 characters.";
+    } else if (message.length < 5) {
+        document.getElementById("messageError").textContent = "Message is too short. Please enter at least 5 characters.";
         document.getElementById("messageError").style.display = "block";
         document.getElementById("message").classList.add("invalid-input");
         isValid = false;   
@@ -125,7 +125,9 @@ function validateForm(event) {
 
 
 // When all validation passes
-let submissions = [];
+// let submissions = [];
+let submissions = JSON.parse(localStorage.getItem("submissions")) || [];
+
 
 if (isValid) {
     let submission = [
@@ -136,8 +138,11 @@ if (isValid) {
         },
     ];
 
+    
+
   
     submissions.push(submission);
+    
 
   
     console.log("Submitted Input:", submission);
