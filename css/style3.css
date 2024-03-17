@@ -218,8 +218,11 @@ nav ul {
 
 .error-message {
   color: #ff7b7b;
-  font-size: .7rem;
-  margin-top: .4rem; 
+  font-size: .69rem;
+  margin-top: .4rem;
+  max-width: max-content;
+  /* display: block;   */
+  /* text-wrap: wrap; */
 }
 
 .invalid-input {
@@ -230,12 +233,21 @@ nav ul {
 
 
 
-#LoginSent {
+#LoginSent ,#SignupSent, #PasswordResetSent {
   color: var(--color-primary);
   font-size: small;
   text-align: center;
 
+
 }
+
+/* .erro-message{
+  color: #ff7b7b;
+  text-align: center;
+
+} */
+
+
 
 
 
@@ -255,11 +267,16 @@ nav ul {
    background-color: var(--headerbg);
   }
 
+  .login-header {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
 
   .login-form-title {
-    margin: .2rem 0 .8rem 0;
+    margin: .2rem 0 -1rem 0;
     text-align: center;
   }
+
  
   .login-inputs{
     display: flex;
@@ -291,11 +308,14 @@ nav ul {
   #checks {
     display: flex;
     justify-content: space-between;
-    gap: 5rem;
+    gap: 7rem;
     align-items: center;
     font-size: .7rem;
-    margin-top: .5rem;
+    margin-top: .4rem;
+
   }
+
+
 
 
 
@@ -304,7 +324,7 @@ nav ul {
     color: var(--color-white);
 }
 
-.login-check{
+.login-check, #psw-visibility{
     display: flex;
     align-items: center;
     gap: 2px;
@@ -329,6 +349,23 @@ nav ul {
 
 }
 
+.forgot-linkk {
+  display: flex; 
+  flex-direction: row;
+  gap: 2rem;
+  align-content: baseline;
+ 
+  justify-content: space-between;  
+}
+
+.forgot-link {
+  font-size: .7rem;  
+  color: var(--color-primary);
+  cursor: pointer;
+  margin-top: 1.4rem; 
+
+}
+
 
 
 
@@ -336,20 +373,27 @@ nav ul {
 #signup-form {
   display: flex;
   justify-content: center;
+
 }
 
 
 #SignUpForm{
-  padding: 2rem;
+  margin-top: 2rem;
+  padding: 1rem 2rem;
   background-color: #f4f4f4;
   border-radius: 4px;
   box-shadow: 1px 1px 1px 1px #d1d4db;
 
 }
 
+#signup-headers {
+ text-align: center;
+ margin-bottom: 1rem;
+}
+
+
 .signup-form-title {
-  padding:0 0 1rem 0;
-  text-align: center;
+ margin-bottom: -.8rem;
 }
 
 
@@ -359,7 +403,7 @@ nav ul {
 }
 
 .signup-label {
-  margin-top: .7rem;
+  margin-top: .65rem;
   font-size: .9rem;
 }
 
@@ -367,7 +411,7 @@ nav ul {
   margin-top:  .7rem;
   display: flex;
   justify-content: space-between;
-  gap: 1rem;
+  gap: 4rem;
 }
 
 .signup-check{
@@ -398,6 +442,8 @@ nav ul {
   text-align: center;
   margin: 1.5rem  0 0 0;
 }
+
+
 
 
 
@@ -474,3 +520,100 @@ nav ul {
   .footer-p {
     font-size: small;
   }
+
+
+  @media screen and (max-width:1023px) {
+
+  
+    main {
+      padding: 0 2rem;
+    }
+  
+    .section-title{
+      font-size: rem;
+      margin-bottom: 1rem;
+    }
+  
+  
+  
+  /* ===Nav BAr */
+  
+  header {
+    padding: 1rem 1rem;
+    line-height: 1.5;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  
+  nav ul {
+    list-style: none;
+    font-weight: bold;
+  }
+  
+  .logo-text {
+    font-size: 1rem;
+    font-weight: 800;
+    color: var(--color-white);
+    background-color: var(--placeholder-color);
+    border-radius: 40px 40px ;
+    padding: .2rem .4rem;
+    
+  }
+  
+  .nav-list li {
+    padding: 4px 8px;
+  }
+  
+  
+  
+  .nav-list li:hover {
+    color: var(--color-white);
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: var(--color-primary);
+    
+  
+  }
+  
+  .nav-list {
+    display: none;
+  
+  }
+  
+  .menu {
+    display: flex;
+    gap: .5rem ;
+  }
+  
+  
+  
+  .cv {
+    padding: 2px 4px; 
+    font-weight: bold;
+    border-radius: 4px;
+    background-color: var(--color-white);
+  }
+  
+  .cv a{
+    text-decoration: none;
+    color: var(--color-black);
+  }
+  
+  .menu svg {
+    fill: currentColor;
+    border: 1px solid var(--color-accent);
+   
+    padding: 4px;
+    border-radius: 4px;
+  }
+  
+  
+  .hamburger{
+    display: inline;
+  }
+  
+  }  
