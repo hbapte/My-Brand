@@ -160,3 +160,90 @@ if (isValid) {
     document.getElementById("contactForm").reset();
 }
 }
+
+
+
+//  LOGIN FORM
+
+document.getElementById('LoginForm').addEventListener('submit', function(event) {
+    var emailUsername = document.getElementById('email-username').value.trim();
+    var password = document.getElementById('password-').value.trim();
+    var emailUsernameError = document.getElementById('email-usernameError');
+    var passwordError = document.getElementById('password-Error');
+    var valid = true;
+
+    // Reset previous error messages
+    emailUsernameError.textContent = '';
+    passwordError.textContent = '';
+
+    // Validate email/username only if it's not empty
+    if (emailUsername === '') {
+      emailUsernameError.textContent = 'Email is required';
+      valid = false;
+    }
+
+    // Validate password only if it's not empty
+    if (password === '') {
+      passwordError.textContent = 'Password is required';
+      valid = false;
+    }
+
+    // If both fields are not empty, perform further validation
+    if (emailUsername !== '' && password !== '') {
+      // Validate username format
+      if (!/^[a-zA-Z0-9._]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(emailUsername)) {
+        emailUsernameError.textContent = 'Invalid email';
+        valid = false;
+      }
+
+      // Validate password strength (for example, at least 6 characters)
+      if (password.length < 6) {
+        passwordError.textContent = 'Password should be at least 6 characters long';
+        valid = false;
+      }
+    }
+
+    if (!valid) {
+      // Prevent form submission if validation fails
+      event.preventDefault();
+    } else {
+      // Form submission succeeded, you can proceed with any further action
+      document.getElementById('LoginSent').textContent = 'Login successfully!';
+    }
+  });
+
+  // Keyup event listener for live validation
+  document.getElementById('email-username').addEventListener('keyup', function() {
+    var emailUsername = this.value.trim();
+    var emailUsernameError = document.getElementById('email-usernameError');
+
+    emailUsernameError.textContent = '';
+
+    // Validate email/username if it's not empty
+    if (emailUsername !== '') {
+      // Validate username format
+      if (!/^[a-zA-Z0-9._]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(emailUsername)) {
+        emailUsernameError.textContent = 'invalid Email';
+      }
+    }
+  });
+
+  // Keyup event listener for live validation
+  document.getElementById('password-').addEventListener('keyup', function() {
+    var password = this.value.trim();
+    var passwordError = document.getElementById('password-Error');
+
+    passwordError.textContent = '';
+
+    // Validate password if it's not empty
+    if (password !== '') {
+      // Validate password strength (for example, at least 6 characters)
+      if (password.length < 6) {
+        passwordError.textContent = 'Password should be at least 6 characters long';
+      }
+    }
+  });
+
+
+  //  REGISTER FORM
+  
