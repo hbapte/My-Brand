@@ -24,13 +24,14 @@
   --color-black: #090909;
   --color-white: #ffffff;
   --footerbg: #ECE8E8;
-  --headerbg:#f9f8f8;
+  --headerbg:#f4f4f4;
   --footer-text-color: #3B3A3A;
   --text-color: var(--color-black);
   --placeholder-color: #A0AEC0;
-  --color-primary-hover: #20ec5a;
+  --color-primary-hover: #28d158;
   --section-header-fontsize: 4rem;
   --input-color: #1E293B;
+  --box-shadow-color: #d1d4db;
   scroll-behavior: smooth; 
 
 }
@@ -49,6 +50,7 @@
   --headerbg: #1e2737;
   --footer-text-color: #FDFDFD;
   --input-color: #cfcccc;
+  --box-shadow-color: var(--footerbg)
 }
 
 
@@ -79,7 +81,7 @@ a {
   color: var(--color-primary);
 }
 
-a:hover {
+main a:hover {
     text-decoration: var(--color-primary-hover);
     text-decoration: underline;
 }
@@ -263,6 +265,7 @@ nav ul {
 #LoginForm {
     padding: 2rem;
     border-radius: 4px;
+    box-shadow: 1px 1px 1px 1px var(--box-shadow-color);
     /* box-shadow:2px 2px 2px 2px #cfcccc; */
    background-color: var(--headerbg);
   }
@@ -319,9 +322,18 @@ nav ul {
 
 
 
-  input[type=checkbox]{
+
+  input[type=checkbox]:checked{
     accent-color: var(--color-primary);
     color: var(--color-white);
+    
+    border-color: #20ec5a;
+    background-color: red;
+}
+
+input:checked {
+  background-color: red; 
+  
 }
 
 .login-check, #psw-visibility{
@@ -340,6 +352,10 @@ nav ul {
   border: 0px solid var(--color-accent);
   border-radius: 4px;
   font-weight: 700;
+}
+
+.login-btn:hover {
+  background-color: var(--color-primary-hover);
 }
 
 
@@ -380,9 +396,9 @@ nav ul {
 #SignUpForm{
   margin-top: 2rem;
   padding: 1rem 2rem;
-  background-color: #f4f4f4;
+  background-color: var(--headerbg);
   border-radius: 4px;
-  box-shadow: 1px 1px 1px 1px #d1d4db;
+  box-shadow: 1px 1px 1px 1px var(--box-shadow-color);
 
 }
 
@@ -436,6 +452,10 @@ nav ul {
 
 }
 
+.signup-btn:hover {
+  background-color: var(--color-primary-hover);
+}
+
 
 .login-account{
   font-size: smaller;
@@ -462,12 +482,11 @@ nav ul {
     border-radius: 4px;
     display: flex;
     flex-direction: column;
-    background-color: #f4f4f4;
+    background-color: var(--headerbg);
     filter: drop-shadow(#20ec5a);
+    box-shadow: 1px 1px 1px 1px var(--box-shadow-color);
     
-    
-
-    
+        
   }
 
   

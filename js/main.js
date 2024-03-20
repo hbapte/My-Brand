@@ -230,13 +230,13 @@ document.getElementById('LoginForm').addEventListener('submit', function(event) 
         LoginMessage.style.color = 'green';
         // document.getElementById('LoginSent').classList.remove('erro-message');
     
-        let loginData = [{   
-            userEmail: emailUsername,
-            userPassword: password,
-            rememberMe: rememberMeCheckbox.checked,
-        }];
+        // let loginData = [{   
+        //     userEmail: emailUsername,
+        //     userPassword: password,
+        //     rememberMe: rememberMeCheckbox.checked,
+        // }];
         
-        console.log("Login Data:", loginData);
+        // console.log("Login Data:", loginData);
     
         // Set a timeout to remove the success message after 5 seconds
         setTimeout(function() {
@@ -245,7 +245,7 @@ document.getElementById('LoginForm').addEventListener('submit', function(event) 
     } else {
         // If user is not found or password is incorrect, display an error message
         var errorMessageElement = document.getElementById('LoginSent');
-        errorMessageElement.textContent = 'User not found or incorrect password';
+        errorMessageElement.textContent = 'incorrect Email or password';
         errorMessageElement.style.color = 'red';
         errorMessageElement.style.textAlign= 'center'; // Set text color to red
         // errorMessageElement.classList.add('erro-message');
